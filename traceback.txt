@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 9, in script
+    e "Once you add a story, pictures, and music, you can release it to the world!"
+Exception: Sayer 'e' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 9, in script
+    e "Once you add a story, pictures, and music, you can release it to the world!"
+  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'e' is not defined.
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.3.3.24100702+nightly
+Guardian Of the Earth 1.0
+Tue Oct 15 16:50:05 2024
