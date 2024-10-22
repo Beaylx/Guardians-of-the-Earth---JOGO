@@ -16,22 +16,32 @@ define player = Character("Jogador")
 define lotte = Character("Charlotte")
 define ngm = Character("???")
 
+image bg1 = "images/bg1.jpeg"
+image bg2 =  "images/bg2.jpg"
+
 label start:
 
-    scene bg #Colocar o cenário do quarto
+    scene bg1 #Colocar o cenário do quarto
+    
+    show bg1:
+        zoom 2
 
     "Você acorda sonolento durante a madrugada."
     "Sentando-se na cama com dificuldade, você coça seus olhos com uma leve sensação de confusão."
     "Nos instantes seguintes, um baruhlo ensurdecedor preenche seus ouvidos, seguido de um imenso clarão invadindo a janela de seu quarto."
     player "Mas o que é isso!?"
 
-    scene bg #Colocar o cenário de janela
+    scene bg2 #Colocar o cenário de janela
+    show bg2:
+        zoom 2.7
 
     "Você múrmura em desespero, levantando-se da cama com pressa e correndo até a janela, que agora não aprsentava qualquer sinal daquela luz estrenha."
     "Olhando lá para fora, tudo parecia normal, você vê a casa de seus vizinhos, os carros em suas respectiva garagens, tudo normal."
     "Então vocÊ decide ir lá fora averiguar aquela situação."
 
     scene bg #Voltar pro cenário de quarto
+    show bg1:
+        zoom 2
 
     "Você veste um casaco qualquer por cima de seu pijama, coloca suas pantufas de pelinhos e abre a porta do seu quarto com cuidado para não acordar seus pais."
 
