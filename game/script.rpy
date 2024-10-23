@@ -16,6 +16,8 @@ define player = Character("Jogador")
 define lotte = Character("Charlotte")
 define ngm = Character("???")
 
+image charlotte normal= "images/Charlotte.png"
+
 image bg1 = "images/quarto.jpeg"
 image bg2 =  "images/janela.jpg"
 image bg3 =  "images/porta.png"
@@ -127,7 +129,7 @@ label start:
     "Você ouve umas voz fina vindo de suas costas."
 
     show Charlotte #Mostra a bixinha
-
+    show charlotte
     "Instantaneamente, você se vira, se deparando com uma garota aparentemente jovem."
 
     menu:
