@@ -23,7 +23,7 @@ image bg4 =  "images/vizinhanca.jpg"
 image bg4_1 =  "images/vizinhanca2.jpg"
 image bg4_2 =  "images/vizinhanca3.jpg"
 image bg5 = "images/casa.jpg"
-image bg6 = "images/meteoro.png
+image bg6 = "images/meteoro.png"
 
 label start:
 
