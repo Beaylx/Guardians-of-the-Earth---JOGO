@@ -16,8 +16,14 @@ define player = Character("Jogador")
 define lotte = Character("Charlotte")
 define ngm = Character("???")
 
-image bg1 = "images/bg1.jpeg"
-image bg2 =  "images/bg2.jpg"
+image bg1 = "images/quarto.jpeg"
+image bg2 =  "images/janela.jpg"
+image bg3 =  "images/porta.png"
+image bg4 =  "images/vizinhanca.jpg"
+image bg4_1 =  "images/vizinhanca2.jpg"
+image bg4_2 =  "images/vizinhanca3.jpg"
+image bg5 = "images/casa.jpg"
+image bg6 = "images/meteoro.png
 
 label start:
 
@@ -45,13 +51,13 @@ label start:
 
     "Você veste um casaco qualquer por cima de seu pijama, coloca suas pantufas de pelinhos e abre a porta do seu quarto com cuidado para não acordar seus pais."
 
-    scene bg #Porta da casa
+    scene bg3 #Porta da casa
 
     "Após passar pelos extensos corredores e cruzar a sala de sua casa, você finalmente chega na porta de entrada."
     "Você exita por alguns instantes, mas a sua curiosidade é maior do que qualquer medo."
     "Você abre a porta xcom cuidado, inicialmente colocando só a sua cabeça para fora."
 
-    scene bg #Vizinhança
+    scene bg4 #Vizinhança
 
     "Sem surpresas, assim como visto da janela, tudo parecia normal."
     "Curiosa, você coloca seu corpo inteiro para fora."
@@ -59,7 +65,7 @@ label start:
     "Parecia, energético?"
     "Movida por seus impulsos naturais, você decide dar uma volta pelo bairro"
 
-    scene bg #Vizinhança 2
+    scene bg4_1 #Vizinhança 2
 
     "Mudando para outra rua, você vê ao longe a mesma luminosidade esquisita que clareou sua janela mais cedo."
     player "Está vindo da direção do bairro de Amélia"
@@ -67,13 +73,13 @@ label start:
     "Você começa a correr em direção ao bairro de sua amiga, sua respiração era pesada e seus passos velozes."
     player "Espero que esteja tudo bem!"
 
-    scene bg #Vizinhança 3
+    scene bg4_2 #Vizinhança 3
 
     "A medida que você se aproximava, a luminosidade ia aumentando, juntamente da estranha energia que pairava no ar."
     "Era bizarro como não havia ninguém nas ruas, como as pessoas não estão vendo isso?!"
     "A medida que sua proximidade com a casa de Amélia aumentava, você percebia que aqule brilho vinha diretamente da casa dela."
 
-    scene bg #Casa da Amélia
+    scene bg5 #Casa da Amélia
 
     "Chegando em frente do local, o que você viu foi absurdamente chocante, porém um tanto quanto extraordinário!"
     player "O que caralhos é isso..."
@@ -84,7 +90,7 @@ label start:
     "Seus lentos passos mudaram de rumo, agora direcionados para frente."
     "Parecia hipinose, seus olhos refletiam o brilho do grande meteoro, é como se ele te chamasse."
 
-    scene bg #Meteoro
+    scene bg6 #Meteoro
 
     "Perto o suficiente, você estende a sua mão."
     "Prestes a tocar, você pode sentir o calor que a esfera emana, parecia que sua mão queimaria a qualquer instantes."
