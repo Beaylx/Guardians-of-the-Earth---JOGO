@@ -24,6 +24,7 @@ image bg4_1 =  "images/vizinhanca2.jpg"
 image bg4_2 =  "images/vizinhanca3.jpg"
 image bg5 = "images/casa.jpg"
 image bg6 = "images/meteoro.png"
+image bg7 = "images/preto.jpg"
 
 label start:
 
@@ -97,19 +98,19 @@ label start:
     "Por fim, você encosta sua palma inteira no meteoro."
     "Instantaneamente, seu corpo se incandesce! você começa a pegar fogo, sentindo a terrível sensação da sua pele derretendo!"
 
-    scene bg #Casa da Amélia 
+    scene bg5 #Casa da Amélia 
 
     player "Aahh- Socorro!!!"
     "Você grita em desespero caindo no chão, você se debate na grama desejando cesar o fogo, porém não adianta."
     "Você sente seu corpo queimar e as chamas tomarem conta dele, era como se o fogo entrasse dentro de você aos poucos."
     
-    scene bg #Cenário preto
+    scene bg7 #Cenário preto
 
     "Debatendo-se incesantemente, você esprime seus olhos, quando bruscamente, tudo para..."
     "Você se sente normal, seu corpo está tranquilo, o calor foi embora..."
     "Então, você deicide abrir os olhos"
 
-    scene bg #Quarto
+    scene bg1 #Quarto
 
     "Você está novamente em seu quato, deitada no chão."
     player "O QUEE!!"
