@@ -42,7 +42,9 @@ define gui.notify_text_size = 24
 
 define gui.title_text_size = 75
 
-define gui.main_menu_background = "images/titulo.png"
+define gui.main_menu_background = "gui/game_menu.jpg"
+show main_menu_background:
+    zoom 9
 define gui.game_menu_background = "gui/game_menu.jpg"
 
 

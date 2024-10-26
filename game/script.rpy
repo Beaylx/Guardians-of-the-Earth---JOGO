@@ -16,7 +16,7 @@ define player = Character("Jogador")
 define lotte = Character("Charlotte")
 define ngm = Character("???")
 
-image charlotte normal= "images/Charlotte.png"
+image lotte normal= "images/Charlotte.png"
 
 image bg1 = "images/quarto.jpeg"
 image bg2 =  "images/janela.jpg"
@@ -128,8 +128,8 @@ label start:
     ngm "Opa.. parece que temos um probleminha aqui!"
     "Você ouve umas voz fina vindo de suas costas."
 
-    show Charlotte #Mostra a bixinha
-    show charlotte
+    show lotte #Mostra a bixinha
+    show lotte
     "Instantaneamente, você se vira, se deparando com uma garota aparentemente jovem."
 
     menu:
@@ -290,7 +290,7 @@ label start:
         lotte "Sim! Controlar, domar... como quiser chamar!"
         lotte "É o que faz você não encendiar as coisas por aí, haha!"
 
-    scene bg #quarto
+    scene bg1 #quarto
 
     show lotte #normal
 
@@ -516,7 +516,7 @@ label start:
         "Eu falo zonza sentido meus olhos pesarem."
         "Eles fecham lentamente, até que a minha ultíma visão seja a feiçaõ séria de Chartlotte."
         
-        scene bg #escuro preto
+        scene bg7 #escuro preto
 
         "Contínua..."
 
