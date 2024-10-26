@@ -1,44 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 446, in script
-    lotte "Escuta [Nome Player], vou precisar que você venha comigo pra estação das guardiãs."
-SyntaxError: unexpected EOF while parsing (<none>, line 1)
+  File "game/script.rpy", line 228, in script
+    $ addPonto(0.5)
+  File "game/script.rpy", line 228, in <module>
+    $ addPonto(0.5)
+NameError: name 'addPonto' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 446, in script
-    lotte "Escuta [Nome Player], vou precisar que você venha comigo pra estação das guardiãs."
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\ast.py", line 2573, in execute
-    Say.execute(self)
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\character.py", line 1440, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\character.py", line 1354, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\character.py", line 1334, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\substitutions.py", line 373, in substitute
-    s = interpolate(s, variables) # type: ignore
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\substitutions.py", line 86, in interpolate
-    raise e
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\substitutions.py", line 78, in interpolate
-    value = renpy.python.py_eval(code, {}, scope)
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\python.py", line 1207, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\python.py", line 1144, in py_compile
-    raise e
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\python.py", line 1081, in py_compile
-    raise orig_e
-  File "C:\Users\USUARIO\Downloads\renpy-8.3.3.24100702+nightly-sdk\renpy-8.3.3.24100702+nightly-sdk\renpy\python.py", line 1073, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: unexpected EOF while parsing (<none>, line 1)
+  File "game/script.rpy", line 228, in script
+    $ addPonto(0.5)
+  File "C:\Users\jeanc\OneDrive\Área de Trabalho\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\jeanc\OneDrive\Área de Trabalho\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 228, in <module>
+    $ addPonto(0.5)
+NameError: name 'addPonto' is not defined
 
-Windows-10-10.0.19041 AMD64
-Ren'Py 8.3.3.24100702+nightly
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.3.2.24090902
 Guardian Of the Earth 1.0
-Sun Oct 20 01:47:09 2024
+Sat Oct 26 11:50:57 2024

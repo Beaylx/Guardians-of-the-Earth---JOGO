@@ -20,12 +20,12 @@ image lotte normal= "images/Charlotte.png"
 
 image bg1 = "images/quarto.jpeg"
 image bg2 =  "images/janela.jpg"
-image bg3 =  "images/porta.png"
-image bg4 =  "images/vizinhanca.jpg"
+image bg3 =  "images/porta.jpg"
+image bg4 =  "images/vizinhanca1.jpg"
 image bg4_1 =  "images/vizinhanca2.jpg"
 image bg4_2 =  "images/vizinhanca3.jpg"
 image bg5 = "images/casa.jpg"
-image bg6 = "images/meteoro.png"
+image bg6 = "images/meteoro.jpg"
 image bg7 = "images/preto.jpg"
 
 label start:
@@ -33,7 +33,7 @@ label start:
     scene bg1 #Colocar o cenário do quarto
     
     show bg1:
-        zoom 2
+        zoom 3
 
     "Você acorda sonolento durante a madrugada."
     "Sentando-se na cama com dificuldade, você coça seus olhos com uma leve sensação de confusão."
@@ -42,7 +42,7 @@ label start:
 
     scene bg2 #Colocar o cenário de janela
     show bg2:
-        zoom 2.7
+        zoom 2.61
 
     "Você múrmura em desespero, levantando-se da cama com pressa e correndo até a janela, que agora não aprsentava qualquer sinal daquela luz estrenha."
     "Olhando lá para fora, tudo parecia normal, você vê a casa de seus vizinhos, os carros em suas respectiva garagens, tudo normal."
@@ -50,18 +50,21 @@ label start:
 
     scene bg #Voltar pro cenário de quarto
     show bg1:
-        zoom 2
+        zoom 3
 
     "Você veste um casaco qualquer por cima de seu pijama, coloca suas pantufas de pelinhos e abre a porta do seu quarto com cuidado para não acordar seus pais."
 
     scene bg3 #Porta da casa
+    show bg3:
+        zoom 3
 
     "Após passar pelos extensos corredores e cruzar a sala de sua casa, você finalmente chega na porta de entrada."
     "Você exita por alguns instantes, mas a sua curiosidade é maior do que qualquer medo."
     "Você abre a porta xcom cuidado, inicialmente colocando só a sua cabeça para fora."
 
     scene bg4 #Vizinhança
-
+    show bg4:
+        zoom 3
     "Sem surpresas, assim como visto da janela, tudo parecia normal."
     "Curiosa, você coloca seu corpo inteiro para fora."
     "Você não vê nada, porém, sente o ar meio esquisito, como explicar?"
@@ -69,7 +72,8 @@ label start:
     "Movida por seus impulsos naturais, você decide dar uma volta pelo bairro"
 
     scene bg4_1 #Vizinhança 2
-
+    show bg4_1:
+        zoom 3
     "Mudando para outra rua, você vê ao longe a mesma luminosidade esquisita que clareou sua janela mais cedo."
     player "Está vindo da direção do bairro de Amélia"
     "Amélia é a sua melhor amiga, vocês se conhecem desde que eram bem novinhas, sem dúvidas tem um laço muito forte!"
@@ -77,13 +81,15 @@ label start:
     player "Espero que esteja tudo bem!"
 
     scene bg4_2 #Vizinhança 3
-
+    show bg4_2:
+        zoom 3
     "A medida que você se aproximava, a luminosidade ia aumentando, juntamente da estranha energia que pairava no ar."
     "Era bizarro como não havia ninguém nas ruas, como as pessoas não estão vendo isso?!"
     "A medida que sua proximidade com a casa de Amélia aumentava, você percebia que aqule brilho vinha diretamente da casa dela."
 
     scene bg5 #Casa da Amélia
-
+    show bg5:
+        zoom 3 
     "Chegando em frente do local, o que você viu foi absurdamente chocante, porém um tanto quanto extraordinário!"
     player "O que caralhos é isso..."
     "Você disse boquiaberta."
@@ -94,25 +100,30 @@ label start:
     "Parecia hipinose, seus olhos refletiam o brilho do grande meteoro, é como se ele te chamasse."
 
     scene bg6 #Meteoro
-
+    show bg6:
+        zoom 3
     "Perto o suficiente, você estende a sua mão."
     "Prestes a tocar, você pode sentir o calor que a esfera emana, parecia que sua mão queimaria a qualquer instantes."
     "Por fim, você encosta sua palma inteira no meteoro."
     "Instantaneamente, seu corpo se incandesce! você começa a pegar fogo, sentindo a terrível sensação da sua pele derretendo!"
 
     scene bg5 #Casa da Amélia 
-
+    show bg5:
+        zoom 3 
     player "Aahh- Socorro!!!"
     "Você grita em desespero caindo no chão, você se debate na grama desejando cesar o fogo, porém não adianta."
     "Você sente seu corpo queimar e as chamas tomarem conta dele, era como se o fogo entrasse dentro de você aos poucos."
     
     scene bg7 #Cenário preto
-
+    show bg7:
+        zoom 9
     "Debatendo-se incesantemente, você esprime seus olhos, quando bruscamente, tudo para..."
     "Você se sente normal, seu corpo está tranquilo, o calor foi embora..."
     "Então, você deicide abrir os olhos"
 
     scene bg1 #Quarto
+    show bg1:
+        zoom 3
 
     "Você está novamente em seu quato, deitada no chão."
     player "O QUEE!!"
@@ -198,7 +209,9 @@ label start:
         lotte "Pense em uma memória feliz e imagine isso acalmando as chamas, mamão com açúcar!"
         "Você segue o que Charlotte diz, apontando suas mãos para o fogo e se cocentrando na sua melhor memória possível."
 
-        scene bg #porta do quarto, apenas, a Lotte não apareçerá.
+        scene bg3 #porta do quarto, apenas, a Lotte não apareçerá.
+        show bg3:
+            zoom 3 
         
         "Você vê..."
 
@@ -291,7 +304,8 @@ label start:
         lotte "É o que faz você não encendiar as coisas por aí, haha!"
 
     scene bg1 #quarto
-
+    show bg1:
+        zoom 3
     show lotte #normal
 
     lotte "Bem, eu tenho muita coisa para te explicar!"
@@ -517,7 +531,8 @@ label start:
         "Eles fecham lentamente, até que a minha ultíma visão seja a feiçaõ séria de Chartlotte."
         
         scene bg7 #escuro preto
-
+        show bg7:
+            zoom 4
         "Contínua..."
 
     return

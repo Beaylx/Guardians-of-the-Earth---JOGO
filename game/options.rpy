@@ -1,10 +1,6 @@
-﻿
-define config.name = _("Guardian Of the Earth")
-
-define gui.show_name = True
+﻿define gui.show_name = True
 
 
-define config.version = "1.0"
 
 define gui.about = _p("""
 """)
