@@ -57,6 +57,7 @@ label start:
     scene bg3 #Porta da casa
     show bg3:
         zoom 3
+    with dissolve
 
     "Após passar pelos extensos corredores e cruzar a sala de sua casa, você finalmente chega na porta de entrada."
     "Você exita por alguns instantes, mas a sua curiosidade é maior do que qualquer medo."
@@ -117,6 +118,7 @@ label start:
     scene bg7 #Cenário preto
     show bg7:
         zoom 9
+    with dissolve
     "Debatendo-se incesantemente, você esprime seus olhos, quando bruscamente, tudo para..."
     "Você se sente normal, seu corpo está tranquilo, o calor foi embora..."
     "Então, você deicide abrir os olhos"
@@ -139,8 +141,10 @@ label start:
     ngm "Opa.. parece que temos um probleminha aqui!"
     "Você ouve umas voz fina vindo de suas costas."
 
-    show lotte #Mostra a bixinha
-    show lotte
+
+    show lotte normal #Mostra a bixinha
+    with dissolve
+    show lotte normal
     "Instantaneamente, você se vira, se deparando com uma garota aparentemente jovem."
 
     menu:
@@ -531,6 +535,7 @@ label start:
         "Eles fecham lentamente, até que a minha ultíma visão seja a feiçaõ séria de Chartlotte."
         
         scene bg7 #escuro preto
+        with dissolve
         show bg7:
             zoom 4
         "Contínua..."

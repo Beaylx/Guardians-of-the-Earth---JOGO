@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 47: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    ;zoom 90
+File "game/script.rpy", line 144: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    with dissolve
     ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Oct 26 18:19:37 2024
+Sun Oct 27 16:59:51 2024
