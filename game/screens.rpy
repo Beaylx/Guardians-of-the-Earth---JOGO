@@ -202,10 +202,10 @@ screen quick_menu():
             textbutton _("Voltar") action Rollback()
             textbutton _("Histórico") action ShowMenu('history')
             textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Automotivo") action Preference("auto-forward", "toggle")
+            textbutton _("Automatico") action Preference("auto-forward", "toggle")
             textbutton _("Salvar") action ShowMenu('save')
-            textbutton _("Q.Salvar") action QuickSave()
-            textbutton _("Q. Carga") action QuickLoad()
+            textbutton _("Salvar") action QuickSave()
+            textbutton _("Carga") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
 init python:
@@ -228,14 +228,19 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xalign 0.5
-        yalign 0.8
+        if renpy.get_screen("main_menu"):
+            xalign 0.5
+            yalign 0.8
+        else:
+            xalign 0.02
+            xoffset 60
+            yalign 0.5
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Início") action Start()
+            textbutton _("Jogar") action Start()
 
         else:
 
@@ -243,7 +248,7 @@ screen navigation():
 
             textbutton _("Salvar") action ShowMenu("save")
 
-        textbutton _("Carga") action ShowMenu("load")
+        textbutton _("Carregar") action ShowMenu("load")
 
         textbutton _("Preferências") action ShowMenu("preferences")
 
@@ -311,7 +316,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background "gui/overlay/fundo.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -418,7 +423,7 @@ style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
 
-    background "gui/overlay/game_menu.png"
+    background "gui/overlay/fundo.png"
 
 style game_menu_navigation_frame:
     xsize 420
@@ -617,7 +622,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferências"), scroll="viewport"):
+    use game_menu(_("Prefs."), scroll="viewport"):
 
         vbox:
 
@@ -769,7 +774,7 @@ screen history():
 
     predict False
 
-    use game_menu(_("Histórico"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
+    use game_menu(_("Histc."), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
 
         style_prefix "history"
 

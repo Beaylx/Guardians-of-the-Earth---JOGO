@@ -27,16 +27,22 @@ image bg4_1 =  "images/vizinhanca2.jpg"
 image bg4_2 =  "images/vizinhanca3.jpg"
 image bg5 = "images/casa.jpg"
 image bg6 = "images/meteoro.jpg"
-image bg7 = "images/preto.jpg"
+image bg7 = "images/preto.png"
 
 label start:
 
-    scene bg1 #Colocar o cenário do quarto
-    
-    show bg1:
-        zoom 3
+    scene bg7 #Colocar o cenário do quarto
+    show bg7:
+        zoom 9
+    with dissolve
 
     "Você acorda sonolento durante a madrugada."
+
+    scene bg1 #Colocar o cenário do quarto
+    show bg1:
+        zoom 3
+    with dissolve
+
     "Sentando-se na cama com dificuldade, você coça seus olhos com uma leve sensação de confusão."
     "Nos instantes seguintes, um baruhlo ensurdecedor preenche seus ouvidos, seguido de um imenso clarão invadindo a janela de seu quarto."
     player "Mas o que é isso!?"
@@ -91,27 +97,19 @@ label start:
 
     scene bg5 #Casa da Amélia
     show bg5:
-        zoom 3 
+        zoom 3.2 
     "Chegando em frente do local, o que você viu foi absurdamente chocante, porém um tanto quanto extraordinário!"
-    player "O que caralhos é isso..."
+    player "O que diabos é isso..."
     "Você disse boquiaberta."
     "Simplismente, no quintal de Amélia havia um grande meteoro emanando um brilho vermelho nunca visto antes."
     "Você da alguns passo para trás, genuinamente com medo do que aquilo poderia significar."
     "Mas ele possuia uma energia magnética, era convidativo se aproximar daquela grande bola rochosa."
     "Seus lentos passos mudaram de rumo, agora direcionados para frente."
     "Parecia hipinose, seus olhos refletiam o brilho do grande meteoro, é como se ele te chamasse."
-
-    scene bg6 #Meteoro
-    show bg6:
-        zoom 3
     "Perto o suficiente, você estende a sua mão."
     "Prestes a tocar, você pode sentir o calor que a esfera emana, parecia que sua mão queimaria a qualquer instantes."
     "Por fim, você encosta sua palma inteira no meteoro."
     "Instantaneamente, seu corpo se incandesce! você começa a pegar fogo, sentindo a terrível sensação da sua pele derretendo!"
-
-    scene bg5 #Casa da Amélia 
-    show bg5:
-        zoom 3 
     player "Aahh- Socorro!!!"
     "Você grita em desespero caindo no chão, você se debate na grama desejando cesar o fogo, porém não adianta."
     "Você sente seu corpo queimar e as chamas tomarem conta dele, era como se o fogo entrasse dentro de você aos poucos."
@@ -127,6 +125,7 @@ label start:
     scene bg1 #Quarto
     show bg1:
         zoom 3
+    with dissolve
 
     "Você está novamente em seu quato, deitada no chão."
     player "O QUEE!!"
@@ -134,12 +133,12 @@ label start:
     player "O que foi isso?! Foi real demais pra ser um sonho..."
     "Você caminha até a porta de seu quarto com pressa, mas ao tocar na maçaneta, você sente sua mão erradiar aquele calor estranho novamente, porém dessa vez não lhe causa dor."
     player "Oque..."
-    "Antes que você pudsses terminar, um cheiro de madeira queimada invade o local e chamas dominam a por de seu quarto!"
+    "Antes que você pudsses terminar, um cheiro de madeira queimada invade o local e chamas dominam a porta de seu quarto!"
     player "Aaah--"
     "Você cai para trás enquanto agarra seu pulso, você observa a porta queimar em sua frente sem saber o que fazer."
     player "Merda! como eu acabo com isso?!"
     "Você olha pras suas mãos confusa, elas estão levemente avermelhadas e ardendo."
-    ngm "Opa.. parece que temos um probleminha aqui!"
+    ngm "Opa... parece que temos um probleminha aqui!"
     "Você ouve umas voz fina vindo de suas costas."
 
 
@@ -217,8 +216,8 @@ label start:
         lotte "Pense em uma memória feliz e imagine isso acalmando as chamas, mamão com açúcar!"
         "Você segue o que Charlotte diz, apontando suas mãos para o fogo e se cocentrando na sua melhor memória possível."
 
-        scene bg3 #porta do quarto, apenas, a Lotte não apareçerá.
-        show bg3:
+        scene bg1 #porta do quarto, apenas, a Lotte não apareçerá.
+        show bg1:
             zoom 3 
         
         "Você vê..."
@@ -244,7 +243,7 @@ label start:
             
             
             "O dia em que você alimentou um animalzinho de rua e ele te seguiu até sua casa, sendo hoje em dia um grande companheiro seu.":
-                $ addPonto(0.5)
+                $ addPontos(0.5)
                 $ Situacao(1)
 
                 "A doce memória vem em seus pensamentos."
@@ -284,7 +283,7 @@ label start:
         $ addPontos(0.5)
 
         lotte "Vamos lá campeã!!"
-        "Charlotte coloca a palma das mãos em seus ombros, como de te desse apoio."
+        "Charlotte coloca a palma das mãos em seus ombros, como se te desse apoio."
         lotte "Primeiro, aponte suas mãos na direção do fogo."
         "Você segue a instrução de Charlotte, estendendo as mãos com as palmas abertas para o fogo."
         lotte "Ok, muito bem!"
@@ -449,9 +448,9 @@ label start:
     
     lotte "Continuando... Você! jovem garotinha, adiquiriu um poder que não estava destinado a você, se bem que..."
     lotte "Na real, talvez estivesse, não pelas nossas superiores, mas pelo própio cosmo, destino..."
-    player "Como eu fui acabar com isso então? E com quem esse coiso deveria ficar??"
-    lotte "Bem, as gurdiãos superiores escolhem garotas todos os anos para recrutar, pra isso, elas precisam da aprovaçaõ do cosmo..."
-    lotte "Aí, na noite da recepçaõ, ele leva a garota escolhida para uma realidade alternativa, para que não haja probelmas."
+    player "Como eu fui acabar com isso então? E com quem essa coisa deveria ficar??"
+    lotte "Bem, as gurdiãs superiores escolhem garotas todos os anos para recrutar, pra isso, elas precisam da aprovaçaõ do cosmo..."
+    lotte "Aí, na noite da recepção, ele leva a garota escolhida para uma realidade alternativa, para que não haja probelmas."
     lotte "Essa realidade é idêntica a nossa, só que vazia, sem terceiros."
     lotte "Com isso feito, naquela realidade, o cosmo envia um meteoro radioativo, transimissor de dons mágicos elementais, para a casa do recptor."
     player "Então a Amélia..."
@@ -504,12 +503,18 @@ label start:
 
                 show lotte feliz #feliz
 
-                lotte "ótimo!"
+                lotte "Ótimo!"
                 lotte "Vou tentar te ajudar ao máximo nessa..."
 
-                "Charlotte me da um sorrio tranquilizador, o que faz eu me sentir mais confiante enquanto a tudo."
+                "Charlotte me da um sorriso tranquilizador, o que faz eu me sentir mais confiante enquanto a tudo."
                 "Sinto que tenho uma longa aventura pela frente."
                 "Continua..."
+
+                scene bg7 #escuro preto
+                show bg7:
+                    zoom 9
+                with dissolve
+
 
             "Recusar ir":
                 $ addPontos(-0.5)
@@ -525,6 +530,11 @@ label start:
                 "Como eu poderia imaginar algo assim?"
                 "Bem... agora só me resta esperar..."
                 "Continua..."
+
+                scene bg7 #escuro preto
+                show bg7:
+                    zoom 9
+                with dissolve
     else:
 
         show lotte #cara séria
@@ -539,9 +549,10 @@ label start:
         "Eles fecham lentamente, até que a minha ultíma visão seja a feiçaõ séria de Chartlotte."
         
         scene bg7 #escuro preto
-        with dissolve
         show bg7:
-            zoom 4
+            zoom 9
+        with dissolve
+        
         "Contínua..."
 
     return
