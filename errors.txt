@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 144: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    with dissolve
-    ^
+File "game/screens.rpy", line 239: the style keyword argument was not given a value.
+    style
+         ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sun Oct 27 16:59:51 2024
+Mon Oct 28 20:21:38 2024

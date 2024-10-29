@@ -17,6 +17,7 @@ define lotte = Character("Charlotte")
 define ngm = Character("???")
 
 image lotte normal= "images/Charlotte.png"
+image lotte feliz="images/lotte_feliz.png"
 
 image bg1 = "images/quarto.jpeg"
 image bg2 =  "images/janela.jpg"
@@ -142,9 +143,11 @@ label start:
     "Você ouve umas voz fina vindo de suas costas."
 
 
-    show lotte normal #Mostra a bixinha
+    show lotte feliz: 
+        xalign 0.5
+        yalign 0.5      #Mostra a bixinha
+
     with dissolve
-    show lotte normal
     "Instantaneamente, você se vira, se deparando com uma garota aparentemente jovem."
 
     menu:
@@ -298,7 +301,7 @@ label start:
         "Você se sente encorajada pelas palavras de Charlotte, elas te davam a clareza de que você estava no caminho certo!"
         "Você continua ordenando que o fogo pare! Sem mais delongas, ele some da sua frente, deixando no ar apenas um cheiro de madeira queimada e fumaça."
 
-        show lotte #sorrindo
+        show lotte feliz #sorrindo
 
         lotte "Muito bem! Você acabou de aprender a canalizar o seu poder!"
         "Charlotte diz orgulhosa sorrindo largamente"
@@ -326,7 +329,7 @@ label start:
 
     player "Meu nome é [NomePlayer], agradeço por me ajudar!"
     
-    show lotte #sorrindo
+    show lotte feliz #sorrindo
 
     lotte "Prazer em conhece-la [NomePlayer]!"
 
@@ -340,7 +343,7 @@ label start:
     lotte "Ok, vamos começar pelo o que eu sou, ou melhor o que nós somos..."
     player "Nós?..."
 
-    show lotte #feliz
+    show lotte feliz #feliz
 
     lotte "As quardiãs da terra! minha esquipe!"
 
@@ -350,7 +353,7 @@ label start:
     lotte "Bem... existem algumas criaturas alienígenas pelo cosmo, e eu lhe garanto que elas não curten muito os humanos..."
     player "Você tá me dizendo que aliens existem??"
 
-    show lotte #sorrindo
+    show lotte feliz #sorrindo
 
     lotte "Mas é claro que sim!"
     lotte "Eles são classificados em 3 tiers!"
@@ -428,7 +431,7 @@ label start:
 
             player "Eu adoraria! Parece algo emocionante!"
 
-            show lotte #feliz
+            show lotte feliz #feliz
 
             lotte "Eu aprecio a sua coragem! mas é muito perigoso, por isso, pense bem..."
 
@@ -437,7 +440,7 @@ label start:
 
             player "Bom, já adiantando, não é bem algo que eu gostaria..."
 
-            show lotte #normal
+            show lotte feliz #normal
 
             lotte "Ah, não é pra qualquer um, então reconheço que pareça assutador."
 
@@ -498,7 +501,7 @@ label start:
                 player "Eu vou Charlotte!"
                 player "Quero resolver isso também!"
 
-                show lotte #feliz
+                show lotte feliz #feliz
 
                 lotte "ótimo!"
                 lotte "Vou tentar te ajudar ao máximo nessa..."

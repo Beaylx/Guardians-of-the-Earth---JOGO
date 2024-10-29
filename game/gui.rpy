@@ -8,7 +8,7 @@ define config.check_conflicting_properties = True
 
 define gui.accent_color = '#9933ff'
 
-define gui.idle_color = '#888888'
+define gui.idle_color = '#370067'
 
 define gui.idle_small_color = '#aaaaaa'
 
@@ -41,6 +41,8 @@ define gui.label_text_size = 36
 define gui.notify_text_size = 24
 
 define gui.title_text_size = 75
+
+
 
 define gui.main_menu_background = "gui/game_menu.jpg"
 define gui.game_menu_background = "gui/game_menu.jpg"
@@ -75,6 +77,7 @@ define gui.button_width = None
 define gui.button_height = None
 
 define gui.button_borders = Borders(6, 6, 6, 6)
+define gui.interface_text_size = 33
 
 define gui.button_tile = False
 

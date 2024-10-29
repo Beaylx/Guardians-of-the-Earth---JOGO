@@ -228,8 +228,8 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        xalign 0.5
+        yalign 0.8
 
         spacing gui.navigation_spacing
 
@@ -285,8 +285,7 @@ screen main_menu():
 
     add gui.main_menu_background
 
-    frame:
-        style "main_menu_frame"
+    
 
     use navigation
 
@@ -971,6 +970,9 @@ screen gamepad_help():
     textbutton _("Calibrar") action GamepadCalibrate()
 
 
+
+style navigation_button_text:
+    xalign 0.5
 style help_button is gui_button
 style help_button_text is gui_button_text
 style help_label is gui_label
