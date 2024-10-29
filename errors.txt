@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 239: the style keyword argument was not given a value.
-    style
-         ^
+File "game/script.rpy", line 514: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    show bg7:
+    ^
 
-Ren'Py Version: Ren'Py 8.3.2.24090902
-Mon Oct 28 20:21:38 2024
+File "game/script.rpy", line 535: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    show bg7:
+    ^
+
+Ren'Py Version: Ren'Py 8.3.3.24100702+nightly
+Tue Oct 29 01:59:29 2024

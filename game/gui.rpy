@@ -5,6 +5,7 @@ init python:
 
 define config.check_conflicting_properties = True
 
+define fontfoda = 'Marquen.otf'
 
 define gui.accent_color = '#9933ff'
 
@@ -12,7 +13,7 @@ define gui.idle_color = '#370067'
 
 define gui.idle_small_color = '#aaaaaa'
 
-define gui.hover_color = '#c184ff'
+define gui.hover_color = '#ffffff'
 
 define gui.selected_color = '#ffffff'
 
@@ -45,7 +46,7 @@ define gui.title_text_size = 75
 
 
 define gui.main_menu_background = "gui/game_menu.jpg"
-define gui.game_menu_background = "gui/game_menu.jpg"
+define gui.game_menu_background = "gui/overlay/confirm.png"
 
 
 define gui.textbox_height = 278
@@ -81,9 +82,9 @@ define gui.interface_text_size = 33
 
 define gui.button_tile = False
 
-define gui.button_text_font = gui.interface_text_font
+define gui.button_text_font = fontfoda
 
-define gui.button_text_size = gui.interface_text_size
+define gui.button_text_size = 40
 
 define gui.button_text_idle_color = gui.idle_color
 define gui.button_text_hover_color = gui.hover_color
