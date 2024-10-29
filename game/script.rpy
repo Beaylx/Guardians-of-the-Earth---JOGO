@@ -144,6 +144,7 @@ label start:
 
 
     show lotte feliz: 
+        zoom 0.25
         xalign 0.5
         yalign 0.5      #Mostra a bixinha
 
