@@ -27,16 +27,22 @@ image bg4_1 =  "images/vizinhanca2.jpg"
 image bg4_2 =  "images/vizinhanca3.jpg"
 image bg5 = "images/casa.jpg"
 image bg6 = "images/meteoro.jpg"
-image bg7 = "images/preto.jpg"
+image bg7 = "images/preto.png"
 
 label start:
 
-    scene bg1 #Colocar o cenário do quarto
-    
-    show bg1:
-        zoom 3
+    scene bg7 #Colocar o cenário do quarto
+    show bg7:
+        zoom 9
+    with dissolve
 
     "Você acorda sonolento durante a madrugada."
+
+    scene bg1 #Colocar o cenário do quarto
+    show bg1:
+        zoom 3
+    with dissolve
+
     "Sentando-se na cama com dificuldade, você coça seus olhos com uma leve sensação de confusão."
     "Nos instantes seguintes, um baruhlo ensurdecedor preenche seus ouvidos, seguido de um imenso clarão invadindo a janela de seu quarto."
     player "Mas o que é isso!?"
@@ -91,7 +97,7 @@ label start:
 
     scene bg5 #Casa da Amélia
     show bg5:
-        zoom 3 
+        zoom 3.2 
     "Chegando em frente do local, o que você viu foi absurdamente chocante, porém um tanto quanto extraordinário!"
     player "O que caralhos é isso..."
     "Você disse boquiaberta."
@@ -100,18 +106,10 @@ label start:
     "Mas ele possuia uma energia magnética, era convidativo se aproximar daquela grande bola rochosa."
     "Seus lentos passos mudaram de rumo, agora direcionados para frente."
     "Parecia hipinose, seus olhos refletiam o brilho do grande meteoro, é como se ele te chamasse."
-
-    scene bg6 #Meteoro
-    show bg6:
-        zoom 3
     "Perto o suficiente, você estende a sua mão."
     "Prestes a tocar, você pode sentir o calor que a esfera emana, parecia que sua mão queimaria a qualquer instantes."
     "Por fim, você encosta sua palma inteira no meteoro."
     "Instantaneamente, seu corpo se incandesce! você começa a pegar fogo, sentindo a terrível sensação da sua pele derretendo!"
-
-    scene bg5 #Casa da Amélia 
-    show bg5:
-        zoom 3 
     player "Aahh- Socorro!!!"
     "Você grita em desespero caindo no chão, você se debate na grama desejando cesar o fogo, porém não adianta."
     "Você sente seu corpo queimar e as chamas tomarem conta dele, era como se o fogo entrasse dentro de você aos poucos."
@@ -127,6 +125,7 @@ label start:
     scene bg1 #Quarto
     show bg1:
         zoom 3
+    with dissolve
 
     "Você está novamente em seu quato, deitada no chão."
     player "O QUEE!!"
