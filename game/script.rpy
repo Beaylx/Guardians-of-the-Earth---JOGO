@@ -145,8 +145,8 @@ label start:
 
     show lotte feliz: 
         zoom 0.25
-        xalign 0.5
-        yalign 0.5      #Mostra a bixinha
+        xalign 0.0
+        yalign 0.2      #Mostra a bixinha
 
     with dissolve
     "Instantaneamente, você se vira, se deparando com uma garota aparentemente jovem."
