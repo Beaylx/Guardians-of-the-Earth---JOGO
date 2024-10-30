@@ -52,7 +52,7 @@ label start:
         zoom 2.61
 
     "Você múrmura em desespero, levantando-se da cama com pressa e correndo até a janela, que agora não aprsentava qualquer sinal daquela luz estrenha."
-    "Olhando lá para fora, tudo parecia normal, você vê a casa de seus vizinhos, os carros em suas respectiva garagens, tudo normal."
+    "Olhando lá para fora, tudo parecia normal, você vê a casa de seus vizinhos, os carros em suas respectivas garagens, tudo normal."
     "Então vocÊ decide ir lá fora averiguar aquela situação."
 
     scene bg #Voltar pro cenário de quarto
@@ -68,7 +68,7 @@ label start:
 
     "Após passar pelos extensos corredores e cruzar a sala de sua casa, você finalmente chega na porta de entrada."
     "Você exita por alguns instantes, mas a sua curiosidade é maior do que qualquer medo."
-    "Você abre a porta xcom cuidado, inicialmente colocando só a sua cabeça para fora."
+    "Você abre a porta com cuidado, inicialmente colocando só a sua cabeça para fora."
 
     scene bg4 #Vizinhança
     show bg4:
