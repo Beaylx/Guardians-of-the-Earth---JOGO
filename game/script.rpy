@@ -16,8 +16,11 @@ define player = Character("Jogador")
 define lotte = Character("Charlotte")
 define ngm = Character("???")
 
-image lotte normal= "images/Charlotte.png"
-image lotte feliz="images/lotte_feliz.png"
+image lotte normal= "images/lotte/lotte_normal.png"
+image lotte feliz="images/lotte/lotte_feliz.png"
+image lotte brava="images/lotte/lotte_brava.png"
+image lotte tedio="images/lotte/lotte_tédio.png"
+image lotte triste="images/lotte/lotte_triste.png"
 
 image bg1 = "images/quarto.jpeg"
 image bg2 =  "images/janela.jpg"
@@ -142,10 +145,10 @@ label start:
     "Você ouve umas voz fina vindo de suas costas."
 
 
-    show lotte feliz: 
+    show lotte feliz: #Mostra a bixinha
         zoom 0.25
         xalign 0.0
-        yalign 0.2      #Mostra a bixinha
+        yalign 0.2      
 
     with dissolve
     "Instantaneamente, você se vira, se deparando com uma garota aparentemente jovem."
@@ -158,9 +161,9 @@ label start:
             player "Quem é você??"
             lotte "Meu nome é Chartlotte, é um prazer conhece-la!"
 
-            show lotte #bixnha com uma cara meio nervosa 
+            show lotte normal #bixinha com uma cara meio nervosa 
         
-            lotte "Embora você não seja bem a pessoas que eu esperava... haha"
+            lotte "Embora você não seja bem a pessoa que eu esperava... haha"
             lotte "Eu vou ser sua guia, acredite, você vai precisar!"
 
        
@@ -169,7 +172,7 @@ label start:
             
             player "Aaah-- Mãe!! Pai!!"
 
-            show lotte #bixa com cara de brava
+            show lotte brava #bixa com cara de brava
 
             ngm "Silencio garota! qual o seu problema?"
 
@@ -180,14 +183,14 @@ label start:
             "Assustada, sua única reação é pegar o livro que estava mais proximo a você e atirar na direção dela com sua maior força possivel!"
             "Com o movimento rápido de uam de suas mãos, o livro queima e vira cinzas na sua frente"
 
-            show lotte #bixa com cara de tédio
+            show lotte tedio #bixa com cara de tédio
 
             ngm "Você só pode estar de brincadeira né?"
 
     
     if EscolhasCertas < 0.5:
 
-        show lotte #com cara de tédio
+        show lotte tedio #com cara de tédio
 
         lotte "Aah, vamos lá..."
         "Charlotte bufa e revira os olhos tediosamente."
@@ -195,15 +198,15 @@ label start:
         lotte "E é melhor você ser mais simpática comigo daqui pra frente..."
         lotte "Sou eu que vou te ajudar a dar os primeiros passos com esse seu novo foguinho ai."
         
-        show lotte #aqui com cara de brava
+        show lotte brava #aqui com cara de brava
 
         lotte "E eu lhe garanto que eu posso ser bem detestável..."
 
     else:
-        show lotte #normal
+        show lotte normal #normal
 
 
-    show lotte #normal
+    show lotte normal #normal
 
     "Charlotte muda seu olhar para a sua porta que ainda está em chamas"
     lotte "Ok, você tem um probleminha ai..."
@@ -252,21 +255,21 @@ label start:
                 "Seu coração se acalma, se enchendo de amor e fofura."
                 "Juntamente a isso, as chamas somem, deixando para trás um pouco de fumaça e um cheiro de madeira queimada no ar."
                 
-                show lotte #normal
+                show lotte normal #normal
 
                 lotte "Eu falei que era facinho..."
                 lotte "Mas devo admitir, você se saiu bem..."
 
         if SituacaoR == 0:
 
-            show lotte #cara de brava
+            show lotte brava #cara de brava
 
             lotte "Tenta de novo! To tentando fazer da maneira mais fácil pra você!"
             "Novamente, você vasculha suas memórias em busca de algo."
             "Desta vez, resolve tentar algo mais fofo, como o dia em que você alimentou um animalzinho de rua e ele te seguiu, atualmente sendo o queridinho da casa!"
             player "Tudo bem... lá vou eu!"
 
-            #tira a lotte
+            hide lotte brava #tira a lotte
 
             "A doce memória vem em seus pensamentos."
             "Você lembra do quão grato seu pet parecia naquele momento."
@@ -274,7 +277,7 @@ label start:
             "Seu coração se acalma, se enchendo de amor e fofura."
             "Juntamente a isso, as chamas somem, deixando para trás um pouco de fumaça e um cheiro de madeira queimada no ar."
             
-            show lotte #normal
+            show lotte normal #normal
 
             lotte "É isso, você conseguiu!"
     
@@ -313,7 +316,7 @@ label start:
     scene bg1 #quarto
     show bg1:
         zoom 3
-    show lotte #normal
+    show lotte normal #normal
 
     lotte "Bem, eu tenho muita coisa para te explicar!"
     player "De fato..."
@@ -338,7 +341,7 @@ label start:
     lotte "Bem... por onde eu começo?"
     "Charlotte parece pensar po alguns instantes, como se procurasse uma ponta para iniciar um longo assunto"
 
-    show lotte #normal
+    show lotte normal #normal
 
     lotte "Ok, vamos começar pelo o que eu sou, ou melhor o que nós somos..."
     player "Nós?..."
@@ -347,7 +350,7 @@ label start:
 
     lotte "As quardiãs da terra! minha esquipe!"
 
-    show lotte #normal
+    show lotte normal #normal
 
     lotte "Nós somos as reponsáveis por proteger este planeta em segredo a muito tempo, existem gerações e gerações de guardiãs..."
     lotte "Bem... existem algumas criaturas alienígenas pelo cosmo, e eu lhe garanto que elas não curten muito os humanos..."
@@ -365,18 +368,18 @@ label start:
 
     lotte "Já para os não-guardiões, são completamente letais..."
 
-    show lotte #normal
+    show lotte normal #normal
 
     lotte "Sobre os tier 3, são os mais difíceis, só as guardiãs mais fortes dão conta deles sózinhas!"
     player "Você consegue?"
     lotte "Bem... sózinha não! Mas já lidei com um juntamente de uma colega, e já lhe digo, não foi nada facíl, pelo contrário... "
 
-    show lotte #triste
+    show lotte triste #triste
 
     "O semblante de Charlotte muda instantânemente."
     lotte "Me custou muito caro..."
             
-    show lotte #normal
+    show lotte normal #normal
 
     lotte "Mas não vou entrar em detalhes!"
     lotte "Enfim, além desses três tiers, existem uma galerinha superior aí, os famosos Celestiais..."
@@ -394,7 +397,7 @@ label start:
             lotte "Estou sim, afinal, eu nem vivi nessa época..."
             lotte "É só meio triste pensar em todas que se forão, e isso pode acontecer novamente, e aí, é a geração atual que vai ruir..."
 
-            show lotte #normal
+            show lotte normal #normal
 
             lotte "Enfim, obrigada por perguntar! Agora, onde estávamos?"
             player "VocÊ estava falando sobre os aliens celestias."
@@ -406,9 +409,9 @@ label start:
 
             "Charlotte chacoalha a cabeça como se estivesse espantando seus pensamentos ruins."
 
-            show lotte #normal
+            show lotte normal #normal
 
-    show lotte #normal
+    show lotte normal #normal
     
     lotte "Certo! os Celestiais são terríveis, um deles faz estrago num planeta, dois podem até destruí-lo, já um grupo..."
     "Charlotte faz uma pausa."
@@ -440,11 +443,11 @@ label start:
 
             player "Bom, já adiantando, não é bem algo que eu gostaria..."
 
-            show lotte feliz #normal
+            show lotte normal #normal
 
             lotte "Ah, não é pra qualquer um, então reconheço que pareça assutador."
 
-    show lotte #normal
+    show lotte normal #normal
     
     lotte "Continuando... Você! jovem garotinha, adiquiriu um poder que não estava destinado a você, se bem que..."
     lotte "Na real, talvez estivesse, não pelas nossas superiores, mas pelo própio cosmo, destino..."
@@ -477,7 +480,7 @@ label start:
 
             lotte "Estranho... não faz sentido você ter ido parar da realidade de recepção ao invés dela... " 
 
-    show lotte #normal
+    show lotte normal #normal
 
     lotte "Bom, não era pra você estar lá de qualquer forma, nós vamos precisar resolver isso..."
 
@@ -521,7 +524,7 @@ label start:
 
                 player "Eu não posso ir, me desculpa..."
 
-                show lotte #triste
+                show lotte triste #triste
 
                 lotte "Tudo bem... não é algo tão simples de aceitar"
                 lotte "Só saiba que, você vai ter que lidar com isso, mais cedo, ou mais tarde."
