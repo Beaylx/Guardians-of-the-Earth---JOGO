@@ -2,13 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 514: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    show bg7:
-    ^
+File "game/script.rpy", line 164: show statement expects a non-empty block.
+    show lotte normal: 
+                      ^
 
-File "game/script.rpy", line 535: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    show bg7:
-    ^
+File "game/script.rpy", line 175: show statement expects a non-empty block.
+    show lotte brava: 
+                     ^
+
+File "game/script.rpy", line 186: show statement expects a non-empty block.
+    show lotte tedio: 
+                     ^
 
 Ren'Py Version: Ren'Py 8.3.3.24100702+nightly
-Tue Oct 29 01:59:29 2024
+Wed Oct 30 02:05:10 2024

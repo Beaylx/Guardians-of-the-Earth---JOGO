@@ -16,11 +16,11 @@ define player = Character("Jogador")
 define lotte = Character("Charlotte")
 define ngm = Character("???")
 
-image lotte normal= "images/lotte/lotte_normal.png"
-image lotte feliz="images/lotte/lotte_feliz.png"
-image lotte brava="images/lotte/lotte_brava.png"
-image lotte tedio="images/lotte/lotte_tédio.png"
-image lotte triste="images/lotte/lotte_triste.png"
+image lotte normal= "images/lotte_normal.png"
+image lotte feliz="images/lotte_feliz.png"
+image lotte brava="images/lotte_brava.png"
+image lotte tedio="images/lotte_tédio.png"
+image lotte triste="images/lotte_triste.png"
 
 image bg1 = "images/quarto.jpeg"
 image bg2 =  "images/janela.jpg"
@@ -56,7 +56,7 @@ label start:
 
     "Você múrmura em desespero, levantando-se da cama com pressa e correndo até a janela, que agora não aprsentava qualquer sinal daquela luz estrenha."
     "Olhando lá para fora, tudo parecia normal, você vê a casa de seus vizinhos, os carros em suas respectivas garagens, tudo normal."
-    "Então vocÊ decide ir lá fora averiguar aquela situação."
+    "Então você decide ir lá fora averiguar aquela situação."
 
     scene bg #Voltar pro cenário de quarto
     show bg1:
@@ -86,8 +86,8 @@ label start:
     show bg4_1:
         zoom 3
     "Mudando para outra rua, você vê ao longe a mesma luminosidade esquisita que clareou sua janela mais cedo."
-    player "Está vindo da direção do bairro de Amélia"
-    "Amélia é a sua melhor amiga, vocês se conhecem desde que eram bem novinhas, sem dúvidas tem um laço muito forte!"
+    player "Está vindo da direção do bairro da Amélia!"
+    "Amélia é a sua melhor amiga, vocês se conhecem desde que eram bem novinhas, sem dúvidas têm um laço muito forte!"
     "Você começa a correr em direção ao bairro de sua amiga, sua respiração era pesada e seus passos velozes."
     player "Espero que esteja tudo bem!"
 
@@ -102,28 +102,28 @@ label start:
     show bg5:
         zoom 3.2 
     "Chegando em frente do local, o que você viu foi absurdamente chocante, porém um tanto quanto extraordinário!"
-    player "O que diabos é isso..."
+    player "O que diabos é isso?..."
     "Você disse boquiaberta."
     "Simplismente, no quintal de Amélia havia um grande meteoro emanando um brilho vermelho nunca visto antes."
     "Você da alguns passo para trás, genuinamente com medo do que aquilo poderia significar."
     "Mas ele possuia uma energia magnética, era convidativo se aproximar daquela grande bola rochosa."
     "Seus lentos passos mudaram de rumo, agora direcionados para frente."
-    "Parecia hipinose, seus olhos refletiam o brilho do grande meteoro, é como se ele te chamasse."
+    "Parecia hipnose, seus olhos refletiam o brilho do grande meteoro, é como se ele te chamasse."
     "Perto o suficiente, você estende a sua mão."
-    "Prestes a tocar, você pode sentir o calor que a esfera emana, parecia que sua mão queimaria a qualquer instantes."
+    "Prestes a tocar, você pode sentir o calor que a esfera emana, parecia que sua mão queimaria a qualquer instante."
     "Por fim, você encosta sua palma inteira no meteoro."
-    "Instantaneamente, seu corpo se incandesce! você começa a pegar fogo, sentindo a terrível sensação da sua pele derretendo!"
+    "Instantaneamente, seu corpo se incandesce! você começa a pegar fogo, sentindo a terrível sensação de sua pele derretendo!"
     player "Aahh- Socorro!!!"
-    "Você grita em desespero caindo no chão, você se debate na grama desejando cesar o fogo, porém não adianta."
+    "Você grita em desespero caindo no chão, você se debate na grama desejando cesar o fogo, porém, não adianta."
     "Você sente seu corpo queimar e as chamas tomarem conta dele, era como se o fogo entrasse dentro de você aos poucos."
     
     scene bg7 #Cenário preto
     show bg7:
         zoom 9
     with dissolve
-    "Debatendo-se incesantemente, você esprime seus olhos, quando bruscamente, tudo para..."
+    "Debatendo-se incessantemente, você esprime seus olhos, quando bruscamente, tudo para..."
     "Você se sente normal, seu corpo está tranquilo, o calor foi embora..."
-    "Então, você deicide abrir os olhos"
+    "Então, você deicide abrir os olhos."
 
     scene bg1 #Quarto
     show bg1:
@@ -134,7 +134,7 @@ label start:
     player "O QUEE!!"
     "Você se levamnta abruptamente."
     player "O que foi isso?! Foi real demais pra ser um sonho..."
-    "Você caminha até a porta de seu quarto com pressa, mas ao tocar na maçaneta, você sente sua mão erradiar aquele calor estranho novamente, porém dessa vez não lhe causa dor."
+    "Você caminha até a porta de seu quarto com pressa, mas ao tocar na maçaneta, você sente sua mão erradiar aquele calor estranho novamente, porém, dessa vez não lhe causa dor."
     player "Oque..."
     "Antes que você pudsses terminar, um cheiro de madeira queimada invade o local e chamas dominam a porta de seu quarto!"
     player "Aaah--"
@@ -148,7 +148,7 @@ label start:
     show lotte feliz: #Mostra a bixinha
         zoom 0.25
         xalign 0.0
-        yalign 0.2      
+        yalign 0.3      
 
     with dissolve
     "Instantaneamente, você se vira, se deparando com uma garota aparentemente jovem."
@@ -218,10 +218,6 @@ label start:
         lotte "Aponte suas mãos para o fogo, igual naqueles filmes de super-herói."
         lotte "Pense em uma memória feliz e imagine isso acalmando as chamas, mamão com açúcar!"
         "Você segue o que Charlotte diz, apontando suas mãos para o fogo e se cocentrando na sua melhor memória possível."
-
-        scene bg1 #porta do quarto, apenas, a Lotte não apareçerá.
-        show bg1:
-            zoom 3 
         
         "Você vê..."
 
@@ -239,7 +235,7 @@ label start:
                 player "Não tá funcionando Charlotte!!"
                 "Você diz desesperada"
 
-                show lotte #Com cara de tédio
+                show lotte tedio #Com cara de tédio
 
                 "Charlotte revira os olhos em desgosto."
                 lotte "Você deve ter pensando em algo super superficial! Por isso não funcionou..."
@@ -269,8 +265,6 @@ label start:
             "Desta vez, resolve tentar algo mais fofo, como o dia em que você alimentou um animalzinho de rua e ele te seguiu, atualmente sendo o queridinho da casa!"
             player "Tudo bem... lá vou eu!"
 
-            hide lotte brava #tira a lotte
-
             "A doce memória vem em seus pensamentos."
             "Você lembra do quão grato seu pet parecia naquele momento."
             "Você pensa também em como ele se tornou um membro da família após isso, estabelecendo um grande laço com você e se tornando querido por todos."
@@ -278,7 +272,6 @@ label start:
             "Juntamente a isso, as chamas somem, deixando para trás um pouco de fumaça e um cheiro de madeira queimada no ar."
             
             show lotte normal #normal
-
             lotte "É isso, você conseguiu!"
     
     else:
@@ -312,14 +305,16 @@ label start:
         "Você pergunta confusa."
         lotte "Sim! Controlar, domar... como quiser chamar!"
         lotte "É o que faz você não encendiar as coisas por aí, haha!"
-
-    scene bg1 #quarto
-    show bg1:
-        zoom 3
+    
     show lotte normal #normal
 
     lotte "Bem, eu tenho muita coisa para te explicar!"
+
+    show lotte feliz
+
     player "De fato..."
+
+    show lotte normal
     lotte "Vamos começar com você me dizendo o seu nome, que tal?"
     
     $ NomePlayer = renpy.input("Insira seu nome!")
@@ -336,7 +331,7 @@ label start:
 
     lotte "Prazer em conhece-la [NomePlayer]!"
 
-    show lotte #pensativa
+    show lotte normal#pensativa
 
     lotte "Bem... por onde eu começo?"
     "Charlotte parece pensar po alguns instantes, como se procurasse uma ponta para iniciar um longo assunto"
@@ -364,7 +359,7 @@ label start:
     lotte "Porém, não são burros, os miseráveis só atacam em bando!"
     lotte "Falando dos tier 2, são os medianos, pra nós não são tão complicados, dependendo da sua habilidade especial podem até dar um trabalinho, mas nada preucupantes!"
             
-    show lotte #séria
+    show lotte normal #séria
 
     lotte "Já para os não-guardiões, são completamente letais..."
 
@@ -385,7 +380,7 @@ label start:
     lotte "Enfim, além desses três tiers, existem uma galerinha superior aí, os famosos Celestiais..."
     lotte "Um desses só veio para terra uma única vez, a séculos atrás, foi uma catástrofe extremamente destrutiva, muitas guardiãs foram mortas..."
 
-    show lotte #pensativa
+    show lotte normal #pensativa
     "Charlotte para por alguns segundos, voltando novamente a ter uma expresão pensativa em sua face."
 
     menu:
@@ -393,7 +388,12 @@ label start:
         "Perguntar se ela está bem":
             $ addPontos(1)
 
+            show lotte feliz
+
             "Charlotte te encara com o leve sorriso"
+
+            show lotte normal
+
             lotte "Estou sim, afinal, eu nem vivi nessa época..."
             lotte "É só meio triste pensar em todas que se forão, e isso pode acontecer novamente, e aí, é a geração atual que vai ruir..."
 
@@ -419,7 +419,13 @@ label start:
     lotte "São raros eles andarem em bando, mas não é impossível!"
     lotte "Saindo um pouco sobre as gurdiãs, vamos falar de você!"
     player "De mim? o que quer saber sobre mim?"
+
+    show lotte feliz
+
     lotte "Haha! por enquanto só o seu nome basta [NomePlayer]!"
+
+    show lotte normal
+
     lotte "Eu vou é lhe explicar a razão dessa sua nova habilidade ai."
     "Ela aponta para suas mãos."
     "Por um momento você chegou a esquecer do que tinha pra arcar, a preucupação enche seu corpo novamente."
@@ -443,7 +449,7 @@ label start:
 
             player "Bom, já adiantando, não é bem algo que eu gostaria..."
 
-            show lotte normal #normal
+            show lotte tedio #normal
 
             lotte "Ah, não é pra qualquer um, então reconheço que pareça assutador."
 
@@ -467,7 +473,7 @@ label start:
 
             player "Sim, ela é a minha melhor amiga desta a infância, sem dúvida somos muito próximas!"
             
-            show lotte #Pensativa
+            show lotte normal #Pensativa
 
             lotte "Humm, essa conexão, talvez ela possa explicar como você foi parar da realidade de recepção ao invés dela..."
 
@@ -476,7 +482,7 @@ label start:
 
             player "Não, ela é só uma conhecida por morarmos na mesma região."
 
-            show lotte #pensativa
+            show lotte normal #pensativa
 
             lotte "Estranho... não faz sentido você ter ido parar da realidade de recepção ao invés dela... " 
 
@@ -484,7 +490,7 @@ label start:
 
     lotte "Bom, não era pra você estar lá de qualquer forma, nós vamos precisar resolver isso..."
 
-    show lotte #séria
+    show lotte normal #séria
 
     lotte "Escuta [NomePlayer], vou precisar que você venha comigo pra estação das guardiãs."
     lotte "Uma das superiores deseja ver você, para assim decidir o que vai fazer diante a isso tudo."
@@ -540,7 +546,7 @@ label start:
                 with dissolve
     else:
 
-        show lotte #cara séria
+        show lotte brava #cara séria
 
         lotte "Não gosto de lidar assim com as pessoas, mas você não me parece do tipo que coopera..."
         lotte "Eu não confio em você o suficiente para te levar de maneira legal, então..."
